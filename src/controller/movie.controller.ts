@@ -1,6 +1,6 @@
 import {genreMovie, Movie} from '@prisma/client';
 import {Response,Request,NextFunction}from 'express'; 
-import { prisma,} from '../config/movie.db';
+import { prisma,} from '../config/db';
 import { getMoveByGenreParams, getMoveByNameParams, getMoveByRatingParams, moveIdParams, moveSchema, moveSchemaTypes} from '../zod-schema/movie.schema';
 
 export const getMoves= async(

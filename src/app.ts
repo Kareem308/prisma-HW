@@ -1,6 +1,6 @@
 import express from "express";
 import "dotenv/config";
-import { moviedb } from "./config/movie.db";
+import { moviedb } from "./config/db";
 import movieRouter from "./routes/movie";
 
 const app = express();
